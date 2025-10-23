@@ -1,0 +1,115 @@
+/* styles.css - TecnoBio */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0a0f14;
+  color: #e9f1f7;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header {
+  padding: 40px 20px;
+  background: radial-gradient(circle at top, #12202d, #0a0f14);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #4dd7a5;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #9bb8d3;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+h2 {
+  font-size: 2em;
+  color: #4dd7a5;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #111a23;
+  border: 1px solid #1f2e3d;
+  border-radius: 12px;
+  padding: 25px;
+  width: 280px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(77, 215, 165, 0.3);
+}
+
+.card h3 {
+  color: #68f0c6;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.card p {
+  color: #b9d4e3;
+  font-size: 0.95em;
+}
+
+.equipe-cards .card {
+  width: 200px;
+}
+
+.contato p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #070c11;
+  padding: 20px;
+  color: #7d8b98;
+  font-size: 0.9em;
+  margin-top: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .equipe-cards .card {
+    width: 80%;
+  }
+}
